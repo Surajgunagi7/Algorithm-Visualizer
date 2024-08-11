@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+    <nav>
+        <h2>Algorithm Visualizer</h2>
+    </nav>
+    <div class="container">
+        <div class="bars_container" id="bars_container"></div>
+        <div class="button_container">
+            <div class="input-container">
+                <label for="slider">Array Size</label>
+                <input type="range" id="slider" min="10" max="40" step="3" value="25">
+            </div>
+
+            <select id="speed">
+                <option value="1000">Slow</option>
+                <option value="300">Medium</option>
+                <option value="100">Fast</option>
+            </select>
+
+            <select name="" id="algo">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+
+            <button id="randomize_array_btn">Randomize Array</button>
+            <button id="sort_btn">Sort</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
